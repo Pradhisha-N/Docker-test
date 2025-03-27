@@ -1,6 +1,7 @@
 from flask import Flask
+app=Flask(__name__)
 @app.route('/')
-def name:
+def hello():
   return "hello world!"
 if __name__ ="__main__"
-  main(host="0.0.0.0",port=5000)
+  app.run(host="0.0.0.0", port=5000)
